@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <title>Document</title>
+
+    <style>
+        header nav ul {
+            padding-left: 0;
+
+        }
+
+        header nav ul li {
+            list-style: none;
+            display: inline-block;
+            /* TODO: delete for last li */
+            margin-right: 15px;
+        }
+
+        #contacts form input,
+        #contacts form textarea {
+            display: block;
+        }
+
+        /* footer {
+            border: 1px solid black;
+        } */
+
+        footer p {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <header id="header">
+        <div class="container">
+
+            <h1>
+                Александр Мартынов
+                <small>Web-разработчик</small>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+
+                    </li>
+                    <li>
+                        <a href="#projects">Проекты</a>
+                    </li>
+                    <li>
+                        <a href="#reviews">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /.container -->
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <p>Consequat culpa veniam aute non tempor magna anim veniam elit. Dolor est exercitation elit anim dolore reprehenderit
+                proident ad cupidatat id qui cupidatat. Enim dolore aliqua mollit enim fugiat aliquip qui aute. Nisi aliqua
+                consectetur elit amet quis magna ea.</p>
+        </div>
+    </section>
+    <!-- /#about -->
+
+    <section id="projects">
+        <div class="container">
+            <h2>Проекты</h2>
+            <p>Consequat culpa veniam aute non tempor magna anim veniam elit. Dolor est exercitation elit anim dolore reprehenderit
+                proident ad cupidatat id qui cupidatat. Enim dolore aliqua mollit enim fugiat aliquip qui aute. Nisi aliqua
+                consectetur elit amet quis magna ea.</p>
+        </div>
+    </section>
+    <!-- /#projects -->
+
+    <section id="reviews">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <p>Consequat culpa veniam aute non tempor magna anim veniam elit. Dolor est exercitation elit anim dolore reprehenderit
+                proident ad cupidatat id qui cupidatat. Enim dolore aliqua mollit enim fugiat aliquip qui aute. Nisi aliqua
+                consectetur elit amet quis magna ea.</p>
+        </div>
+    </section>
+    <!-- /#reviews -->
+
+    <section id="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+
+
+            <div class="row">
+                <div class="col-6">
+                    <p>Consequat culpa veniam aute non tempor magna anim veniam elit. Dolor est exercitation elit anim dolore
+                        reprehenderit proident ad cupidatat id qui cupidatat. Enim dolore aliqua mollit enim fugiat aliquip
+                        qui aute. Nisi aliqua consectetur elit amet quis magna ea.</p>
+                </div>
+                <div class="col-6">
+                    <form action="">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" required>
+                        <label for="email">Ваш емаил</label>
+                        <input type="text" id="email" name="email" required>
+                        <label for="message">Ваше сообщение</label>
+                        <textarea name="message" id="message" rows="10" required></textarea>
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+
+
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /#contacts -->
+
+    <footer>
+        <div class="container">
+            <a href="#header">Наверх</a>
+            <p>Александр Мартынов - Web-разработчик. 2018г.</p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
