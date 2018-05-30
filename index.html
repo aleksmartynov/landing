@@ -5,33 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <title>Document</title>
 
     <style>
-        header nav ul {
-            padding-left: 0;
+        /* Общие стили */
 
+        body {
+            font-size: 18px;
+            color: #000000;
+            background-color: #f1ece9;
+            line-height: 23px;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        h1,
+        h2 {
+            font-size: 23px;
+            line-height: 32px;
+            font-weight: 500;
+        }
+
+
+
+        /* Стили разделов */
+
+        header {
+            background-color: #333a42;
+            color: #ffffff;
+            padding-top: 39px;
+
+        }
+
+        header nav ul {
+            padding-top: 7px;
+            padding-bottom: 2px;
         }
 
         header nav ul li {
-            list-style: none;
             display: inline-block;
-            /* TODO: delete for last li */
-            margin-right: 15px;
+            margin-right: 34px;
         }
 
-        #contacts form input,
-        #contacts form textarea {
-            display: block;
+        header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+
         }
 
-        /* footer {
-            border: 1px solid black;
-        } */
+        #about {
+            background-color: #333a42;
+            color: #ffffff;
+            padding-top: 121px;
+            padding-bottom: 80px;
 
-        footer p {
-            text-align: center;
+        }
+
+        #about figure {
+            width: 208px;
+            height: 208px;
+            background-color: #d7443e;
+            border-radius: 50%;
+        }
+
+        #about .lead {
+            font-size: 24px;
+            line-height: 32px;
+            margin-top: 8px;
+            margin-bottom: 8px;
         }
     </style>
 
@@ -42,39 +85,59 @@
 
     <header id="header">
         <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h1>Александр Мартынов</h1>
+                </div>
+                <div class="col-8 offset-1">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#about">About</a>
 
-            <h1>
-                Александр Мартынов
-                <small>Web-разработчик</small>
-            </h1>
+                            </li>
+                            <li>
+                                <a href="#projects">Проекты</a>
+                            </li>
+                            <li>
+                                <a href="#reviews">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#contacts">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about">About</a>
 
-                    </li>
-                    <li>
-                        <a href="#projects">Проекты</a>
-                    </li>
-                    <li>
-                        <a href="#reviews">Отзывы</a>
-                    </li>
-                    <li>
-                        <a href="#contacts">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+
         </div>
         <!-- /.container -->
     </header>
 
     <section id="about">
         <div class="container">
-            <h2>Обо мне</h2>
-            <p>Consequat culpa veniam aute non tempor magna anim veniam elit. Dolor est exercitation elit anim dolore reprehenderit
-                proident ad cupidatat id qui cupidatat. Enim dolore aliqua mollit enim fugiat aliquip qui aute. Nisi aliqua
-                consectetur elit amet quis magna ea.</p>
+            <div class="row">
+                <div class="col-3">
+                    <!-- тут должно быть изо -->
+                    <figure>
+
+                    </figure>
+                </div>
+                <div class="col-8 offset-1">
+
+                    <div class="lead">
+                        Pariatur sint esse nisi nulla pariatur sit amet id occaecat aliqua fugiat. st exercitation magna consectetur ipsum in cupidatat
+                        in minim ex. Culpa enim incididunt eu ut proident pariatur proident laboris reprehenderit adipisicing.
+                        Consequat culpa veniam aute non tempor magna anim veniam elit. Dolor est exercitation elit anim dolore
+                        reprehenderit proident ad cupidatat id qui cupidatat.
+
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </section>
     <!-- /#about -->
