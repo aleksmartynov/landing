@@ -28,8 +28,6 @@
             font-weight: 500;
         }
 
-
-
         /* Стили разделов */
 
         header {
@@ -76,13 +74,71 @@
             margin-top: 8px;
             margin-bottom: 8px;
         }
+
+        #projects .wrapper {
+            border-bottom: 1px solid #a6a5a1;
+            padding-top: 39px;
+            padding-bottom: 42px;
+        }
+
+        #projects figure {
+
+            background-color: #4a90e2
+        }
+
+        #projects figure img {
+            height: 288px;
+        }
+
+        #projects figure figcaption {
+            padding-top: 6px;
+            background-color: #f1ece9;
+        }
+
+        #projects figure figcaption h3 {
+
+            font-size: 23px;
+            line-height: 32px;
+            margin-bottom: 7px;
+        }
+        #projects figure figcaption .counter {
+            text-align: right;
+        }
+
+
+        #reviews .wrapper {
+            border-bottom: 1px solid #a6a5a1;
+            padding-bottom: 127px;
+            padding-top: 21px;
+
+        }
+
+        #reviews .wrapper h2 {
+            margin-bottom: 57px;
+        }
+
+        #reviews .wrapper h3 {
+            font-weight: bold;
+            line-height: 24px;
+        }
+
+        #reviews figure {
+            width: 144px;
+            height: 144px;
+            background-color: #4a90e2;
+            border-radius: 50%;
+        }
+
+
+
+        #contacts {
+            /* padding-top: */
+        }
     </style>
 
 </head>
 
 <body>
-
-
     <header id="header">
         <div class="container">
             <div class="row">
@@ -120,8 +176,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <!-- тут должно быть изо -->
+
                     <figure>
+                        <!-- тут должно быть изо -->
 
                     </figure>
                 </div>
@@ -144,29 +201,104 @@
 
     <section id="projects">
         <div class="container">
-            <h2>Проекты</h2>
-            <p>Consequat culpa veniam aute non tempor magna anim veniam elit. Dolor est exercitation elit anim dolore reprehenderit
-                proident ad cupidatat id qui cupidatat. Enim dolore aliqua mollit enim fugiat aliquip qui aute. Nisi aliqua
-                consectetur elit amet quis magna ea.</p>
+
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-3">
+
+                        <h2>Проекты</h2>
+                    </div>
+                    <div class="col-8 offset-1">
+
+
+
+                        <figure>
+                            <img src="img/projects/SuperCat.jpg" alt="SuperCat.jpg">
+                            <figcaption>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h3>Сайт "Светлый день"</h3>
+                                        <p>2017 · Программирование · Верстка</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="counter">1/10</div>
+                                    </div>
+                                </div>
+                                <!-- /.row -->
+                            </figcaption>
+                        </figure>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.wrapper -->
         </div>
+        <!-- /.container -->
     </section>
     <!-- /#projects -->
 
     <section id="reviews">
+
         <div class="container">
-            <h2>Отзывы</h2>
-            <p>Consequat culpa veniam aute non tempor magna anim veniam elit. Dolor est exercitation elit anim dolore reprehenderit
-                proident ad cupidatat id qui cupidatat. Enim dolore aliqua mollit enim fugiat aliquip qui aute. Nisi aliqua
-                consectetur elit amet quis magna ea.</p>
+            <div class="wrapper">
+                <h2>Отзывы</h2>
+                <div class="row">
+
+                    <!-- ЛЕВАЯ КОЛОНКА-->
+                    <div class="col-6">
+
+                        <div class="row">
+                            <!--ЛеваяЧасть левой колонки-->
+                            <div class="col-4">
+                                <figure>
+                                    <!-- КРУГ-->
+                                </figure>
+                            </div>
+                            <!-- Правая часть левой колонки-->
+                            <div class="col-8">
+                                <h3>Глебан</h3>
+                                <p>«Заебись по красоте сделал, буду еще заказывать и друганам посоветую. Павел мастер на все
+                                    руки, сайт состряпал за 3 дня»</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  ПРАВАЯ КОЛОНКА -->
+                    <div class="col-6">
+
+                        <!-- Левая часть правой колонки-->
+
+                        <div class="row">
+                            <div class="col-4">
+                                <figure>
+
+                                </figure>
+                            </div>
+                            <div class="col-8">
+                                <h3>Глебан</h3>
+                                <p>«Заебись по красоте сделал, буду еще заказывать и друганам посоветую. Павел мастер на все
+                                    руки, сайт состряпал за 3 дня»</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.wrapper -->
         </div>
+        <!-- /.container -->
+
+
     </section>
     <!-- /#reviews -->
 
     <section id="contacts">
         <div class="container">
             <h2>Контакты</h2>
-
-
             <div class="row">
                 <div class="col-6">
                     <p>Consequat culpa veniam aute non tempor magna anim veniam elit. Dolor est exercitation elit anim dolore
