@@ -61,11 +61,18 @@
 
         }
 
+
         #about figure {
             width: 208px;
             height: 208px;
             background-color: #d7443e;
             border-radius: 50%;
+        }
+
+        #about .row figure img {
+            border-radius: 50%;
+            width: 208px;
+            height: 208px;
         }
 
         #about .lead {
@@ -88,6 +95,7 @@
 
         #projects figure img {
             height: 288px;
+
         }
 
         #projects figure figcaption {
@@ -101,6 +109,7 @@
             line-height: 32px;
             margin-bottom: 7px;
         }
+
         #projects figure figcaption .counter {
             text-align: right;
         }
@@ -122,17 +131,58 @@
             line-height: 24px;
         }
 
-        #reviews figure {
+        /* #reviews figure {
+                        
+        } */
+
+        #reviews figure image {
+            border-radius: 50%;
             width: 144px;
             height: 144px;
-            background-color: #4a90e2;
-            border-radius: 50%;
+        }
+
+        #contacts {
+            padding-bottom: 96px;
+        }
+
+        #contacts h2 {
+            padding-top: 37px;
+            padding-bottom: 32px;
+
+        }
+
+        #contacts .lead {
+            font-size: 24px;
+            line-height: 32px;
+        }
+   
+        #contacts .mailto {
+            color: #d7443e;
+            text-decoration: none;
+        }
+
+        #contacts form input,
+        #contacts form textarea {
+            width: 100%;
+            line-height: 24px;
+            border: 1px solid #333a42;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+        #contacts form input[type="submit"] {
+            background-color: #333a42;
+            color: #ffffff;
+        }
+
+        #contacts form label {
+            line-height: 32px;
         }
 
 
-
-        #contacts {
-            /* padding-top: */
+        footer {
+            background-color: #333a42;
+            height: 52px;
         }
     </style>
 
@@ -149,7 +199,7 @@
                     <nav>
                         <ul>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#about">Обо мне</a>
 
                             </li>
                             <li>
@@ -165,9 +215,6 @@
                     </nav>
                 </div>
             </div>
-
-
-
         </div>
         <!-- /.container -->
     </header>
@@ -179,7 +226,7 @@
 
                     <figure>
                         <!-- тут должно быть изо -->
-
+                        <img src="img/projects/Iam.jpg" alt="Iam.jpg">
                     </figure>
                 </div>
                 <div class="col-8 offset-1">
@@ -193,8 +240,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
     <!-- /#about -->
@@ -205,12 +250,9 @@
             <div class="wrapper">
                 <div class="row">
                     <div class="col-3">
-
                         <h2>Проекты</h2>
                     </div>
                     <div class="col-8 offset-1">
-
-
 
                         <figure>
                             <img src="img/projects/SuperCat.jpg" alt="SuperCat.jpg">
@@ -227,10 +269,6 @@
                                 <!-- /.row -->
                             </figcaption>
                         </figure>
-
-
-
-
 
                     </div>
                 </div>
@@ -256,6 +294,7 @@
                             <div class="col-4">
                                 <figure>
                                     <!-- КРУГ-->
+                                    <img src="img/projects/CAT_1.jpg" alt="CAT_1.jpg">
                                 </figure>
                             </div>
                             <!-- Правая часть левой колонки-->
@@ -275,7 +314,7 @@
                         <div class="row">
                             <div class="col-4">
                                 <figure>
-
+                                    <img src="img/projects/DOG_1.jpg" alt="DOG_1.jpg">
                                 </figure>
                             </div>
                             <div class="col-8">
@@ -298,42 +337,76 @@
 
     <section id="contacts">
         <div class="container">
-            <h2>Контакты</h2>
             <div class="row">
                 <div class="col-6">
-                    <p>Consequat culpa veniam aute non tempor magna anim veniam elit. Dolor est exercitation elit anim dolore
-                        reprehenderit proident ad cupidatat id qui cupidatat. Enim dolore aliqua mollit enim fugiat aliquip
-                        qui aute. Nisi aliqua consectetur elit amet quis magna ea.</p>
-                </div>
-                <div class="col-6">
-                    <form action="">
-                        <label for="name">Ваше имя</label>
-                        <input type="text" id="name" required>
-                        <label for="email">Ваш емаил</label>
-                        <input type="text" id="email" name="email" required>
-                        <label for="message">Ваше сообщение</label>
-                        <textarea name="message" id="message" rows="10" required></textarea>
-                        <input type="submit" value="Отправить">
-                    </form>
-                </div>
+                    <!-- ЛЕВАЯ ЧАСТЬ "КОНТАКТЫ"-->
+                    <h2>Контакты</h2>
 
+                    <div class="lead"> Я сейчас нахожуся в в Тайланде. У меня сейчас 22:04. Здесь все кто по кайфу, ингуши, кабардинцы.
+                        <br>
+                        <br>Быстрее всего отвечу
+                        <a class="mailto" href="mailto:qwert@example.com">по почте</a>.
+                    </div>
+                </div>
+                <!-- /.col-6 -->
+                <div class="col-6">
+                    <!-- ПРАВАЯ ЧАСТЬ "ОБРАТНАЯ СВЯЗЬ"-->
+
+                    <h2>Обратная связь</h2>
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="col-6">
+                                <label for="email">Почта</label>
+                                <input type="text" id="email" name="email" min="7" required>
+                            </div>
+                        </div>
+                        <br />
+                        <label for="message">Сообщение</label>
+                        <textarea name="message" id="message" rows="10" required></textarea>
+                        <br />
+                        <br />
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="submit" value="Отправить">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+                <!-- /.col-6 -->
             </div>
             <!-- /.row -->
-
-
-
         </div>
         <!-- /.container -->
     </section>
     <!-- /#contacts -->
-
-    <footer>
-        <div class="container">
-            <a href="#header">Наверх</a>
-            <p>Александр Мартынов - Web-разработчик. 2018г.</p>
-
+    <section id="footer">
+        <div class="counter">
+            <footer></footer>
         </div>
-    </footer>
+    </section>
+    <!-- scripts -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(()=>{
+            
+            $("#contacts form input[type=submit]").on("click", (event)=>{
+                event.preventDefault();
+
+                let name = $("#name").val();
+                let email = $("#email").val();
+                let message = $("#message").val();
+
+                $.post("server.php", { name, email, message});
+            })
+
+        });
+    </script>
 </body>
 
 </html>
